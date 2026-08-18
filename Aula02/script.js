@@ -65,3 +65,8 @@ function calcularIMC(){
     imc = parseFloat(imc.toFixed(2));
     alert("O IMC do paciente "+  paciente.nome + " é: " + imc)
 }
+
+$("#quadrado").css("width","200px");
+$("#quadrado").css("background","blue");
+$("#quadrado").css("color","#a56161ff");
+
