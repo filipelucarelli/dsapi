@@ -63,6 +63,6 @@ function converterNumero(){
 
     req.open("POST", "servidor.php", true)
     req.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
-    req.send("valor=" + numero * 5)
+    req.send("real=" + numero * 5)
 
 }

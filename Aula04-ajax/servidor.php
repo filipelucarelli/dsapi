@@ -1,5 +1,5 @@
 <?php
-
+/*
 //$value = $_GET["valor"];
 $value = $_POST["valor"];
 
@@ -15,3 +15,5 @@ for ($i = 1; $i <= $value; $i++){
 }
 
 echo $txt;
+
+*/
