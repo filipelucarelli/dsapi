@@ -38,7 +38,7 @@ function getProdutos(){
                             <td><button onclick="editar(${prod.id})">
                                 Editar</button>
                             </td>
-                            <td><button onclick="excluir(${prod.id})">
+                            <td><button onclick="excluir(${prod.id},${prod.nome},${prod.preco})">
                                 X </button>
                             </td>
                         </tr>
@@ -99,4 +99,14 @@ function salvar(){
         req.setRequestHeader("COntent-type", "application/x-www-form-urlencoded")
         req.send(`name=${txtNome.value}&price=${preco}`)
     }
+}
+
+
+function editar(idProd, nome, preco){
+
+    document.getElementById("txtID").value = idProd
+    document.getElementById("txtNome").value = nome.innerText
+    document.getElementById("txtPreco").value = preco
+    
+    
 }
